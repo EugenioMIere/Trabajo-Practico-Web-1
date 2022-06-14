@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giftcard</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="css/giftcard.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/giftcard.js"></script>
+    <script src="js/menuResponsive.js"></script>
+    <script src="js/contador_carrito.js"></script>
+  </head>
+
+  <body>
+    <header>
+        <div class="header">
+            <a href="index.html"><img src="img/logo2.png" alt="logo"id="logo"></a>
+            <div class="barra_busqueda">
+                <form action="#" method="post" target="_self" id="listam">
+                    <datalist id="lista_info_header">
+                    <option value="Curso">
+                    <option value="Calendario Académico">
+                    <option value="Gift Card">
+                    <option value="Inscripcion a curso">
+                    <option value="Contacto">
+                    </datalist>
+                    <input type="text" list="lista_info_header" >
+                    <a class="lupa_puntero"><input type="image" id="lupa_busc" src="img/Lupa.png"/></a>
+                </form> 
+            </div>
+            <a><img src="img/carrito2.png" alt="carrito" id="carrito_header"></a> 
+            <span id="cantidadCarrito">0</span>
+        </div>
+    </header>
+    <a class="desplegable">MENU</a>
+    <nav class="nav_paginas">
+        <ul>
+            <li>
+                <a href="curso.html">CURSOS</a> 
+            </li>
+            <li>
+                <a href="calendario.html">CALENDARIO ACADEMICO</a> 
+            </li>
+            <li> 
+                <a href="giftcard.html">GIFT CARD</a> 
+            </li>
+            <li>
+                <a href="contacto.html">CONTACTO</a> 
+            </li>
+
+        </ul>
+    </nav>
+
+    <main>
+      <article class="imagen">
+        <section class="personalizacion">
+          <article class="vista-previa">
+            <p id="montogif" class="montogif"></p>
+            <p class="titulo">Giftcard para</p>
+            <p id="texto"></p>
+          </article>
+        </section>
+      </article>
+
+      <article>
+        <form action="#" class="formulario">
+          <h3>Personalización de Giftcard</h3>
+
+          <div class="parametro">
+            <input type="text" name="nombre" id="nombre" />
+          </div>
+
+          <h3>Cambiá el color del texto</h3>
+
+          <div class="parametro">
+            <input type="radio" value="negro" name="color" /> Negro
+            <input type="radio" value="blanco" name="color" /> Blanco
+            <input type="radio" value="rojo" name="color" /> Rojo
+            <input type="radio" value="gris" name="color" /> Gris
+          </div>
+
+          <h3>Tamaño</h3>
+
+          <div class="parametro">
+            <input type="radio" name="tamano" value="20px" />20px
+
+            <input type="radio" name="tamano" value="veinteocho" />28px
+
+            <input type="radio" name="tamano" value="treintados" />32px
+
+            <input type="radio" name="tamano" value="cuarentaocho" />48px
+
+            <input type="radio" name="tamano" value="sesenta" />60px
+          </div>
+
+          <h3>Monto $</h3>
+
+          <div class="parametro">
+            <input type="text" name="monto" id="monto" />
+          </div>
+
+          <h3>Ubicacion</h3>
+
+          <div class="parametro">
+            <input type="radio" value="Izquierda" name="Ubicacion" /> Izquierda
+            <input type="radio" value="Centro" name="Ubicacion" /> Centro
+            <input type="radio" value="Derecha" name="Ubicacion" /> Derecha
+          </div>
+
+          
+
+          <h3 class="fondos">Fondo</h3>
+
+          <div class="parametro">
+            <input type="radio" value="1" name="fondo" /> Fondo 1
+            <input type="radio" value="2" name="fondo" /> Fondo 2
+            <input type="radio" value="3" name="fondo" /> Fondo 3
+          </div>
+
+          <section class="enviar">
+            <input
+              type="submit"
+              class="boton"
+              value="Confirmar"
+              class="input_giftcard"
+            />
+          </section>
+        </form>
+      </article>
+    </main>
+
+    <footer>
+      <div class="datos_grupo cajas_footer">
+        <h5>DATOS DEL GRUPO</h5>
+        <p class="integrantes">Eugenio</p>
+            <p class="integrantes">Ivan</p>
+            <p class="integrantes">Santiago</p>
+      </div>
+
+      <div class="menu_footer cajas_footer">
+        <nav class="nav_footer">
+          <ul>
+            <li>
+              <a href="curso.html">CURSOS</a>
+            </li>
+            <li>
+              <a href="#">CALENDARIO ACADEMICO</a>
+            </li>
+            <li>
+              <a href="giftcard.html">GIFT CARD</a>
+            </li>
+            <li>
+              <a href="contacto.html">CONTACTO</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="redes_footer cajas_footer">
+        <h5>REDES SOCIALES:</h5>
+        <div class="iconos_redes">
+          <a href="https://www.facebook.com/"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

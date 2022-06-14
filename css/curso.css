@@ -1,0 +1,304 @@
+.info_curso{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    padding: 3rem 10rem;
+}
+
+
+.detalle_curso{
+    color:rgb(0, 0, 0);
+}
+
+.detalle_curso h2{
+    font-size: 4rem;
+}
+
+.detalle_curso ul{
+    width: 50%;
+    list-style-type: none;
+    margin-top:1rem;
+    margin-bottom:1rem;
+}
+.detalle_curso li{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.2rem;
+    color: rgb(41, 41, 41);
+}
+
+.font_info{
+    font-size: 1.3rem;
+    color: rgb(54, 54, 54);
+}
+
+.btn_inscribirse{
+    padding: 1rem 3rem;
+    background-color: transparent;
+    color:rgb(19, 19, 19);
+    border-color: rgb(48, 252, 75);
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+    transition:0.3s;
+}
+
+.btn_inscribirse:hover{
+    background-color:rgb(13, 253, 45) ;
+}
+
+.btn_inscribirse:active{
+    background-color: rgb(14, 199, 38);
+}
+
+.foto_curso{
+    display: block;
+    width: 50%;
+    margin-right: 3rem;
+    padding:1rem;
+    /*background-image: url(../img/curso1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;*/
+}
+
+.section-contenido{
+    width: 50%;
+    margin: auto;
+}
+
+#div_wrapper_contenido{
+    padding: 2rem 0;
+}
+
+.div_unidades{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.4rem 0.5rem;
+    background-color: rgb(255, 208, 208);
+    cursor: pointer;
+    transition:0.5s;
+    border: none;
+}
+
+.div_unidades:after {
+    content: '\02795';
+    font-size: 0.9rem;
+    color: rgb(0, 0, 0);
+    float: right;
+    margin-left: 5px;
+    
+}
+
+.active:after {
+    content: "\2796";
+}
+
+.active, .div_unidades:hover{
+    background-color: rgb(129, 129, 129);
+}
+
+
+.contenido{
+    background-color: rgb(235, 235, 235);
+    padding: 0 0.5rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.contenido ul{
+    list-style: none;
+    padding: 0.5rem 0;
+    border-radius: 4px 4px 0 0;
+}
+
+.contenido ul li{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    
+}
+
+.text_contenido{
+    padding:0 0.5rem;
+}
+
+.span_pdf{
+    font-weight: 400;
+
+}
+
+.iconos_contenido{
+    display: block;
+    width: 50%;
+}
+
+.fa-file-pdf{
+    padding: 0 0 0 0.2rem;
+}
+
+.section_docente{
+    width: 100%;
+    margin:auto;
+    padding: 2rem 5rem;
+}
+
+.nombre_docente h2{
+    padding-bottom: 1rem;
+}
+
+.info_docente{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(105, 105, 105);
+    padding: 3rem 1rem;
+}
+
+.div_foto_doc{
+    display: flex;
+    justify-content: space-between;
+}
+
+.texto_info_doc{
+    width: 80%;
+    margin: auto;
+}
+
+.foto_docente img{
+    border-radius: 50%;
+    width: auto;
+    height: auto;
+}
+
+.docente{
+    margin-left: 0.5rem;
+    justify-content: center;
+}
+
+.docente a{
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+}
+
+.docente a:hover{
+    color: rgb(177, 176, 176);
+}
+
+.docente h4{
+    padding: 0.2rem 0;
+    color: yellow;
+}
+
+.docente p{
+    margin-top:0.5rem;
+}
+
+.redes_docente{
+    padding: 0.5rem 1rem;
+}
+
+.redes_docente h5{
+    padding-bottom: 0.5rem;
+    font-style:italic;
+}
+
+.redes{
+    text-decoration: none;
+    color: black;
+    padding: 0.2rem 0rem;
+    transition: 0.4s;
+} 
+
+.name_redes{
+    font-family: sans-serif;
+    color: rgb(211, 211, 211);
+}
+
+.redes:hover{
+   color: rgb(151, 151, 151);
+}
+
+.cursos_destacados{
+    padding: 4rem 3rem;
+}
+
+
+.cursitos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 40px;
+}
+
+
+@media screen and (max-width:53em){
+    .info_curso{
+        display:flex;
+        flex-direction: column-reverse;
+        padding: 3rem 0.5rem;
+    }
+
+    .foto_curso{
+        width: 100%;
+    }
+    .foto_curso img{
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .detalle_curso{
+        width: 80%;
+    }
+
+    .detalle_curso h2{
+        width: 80%;
+        font-size: 160%;
+        margin: auto;
+    }
+
+    .detalle_curso ul{
+        width: 80%;
+        margin: auto;
+    }
+
+    .btn_inscribirse{
+        width: 100%;
+        margin-left: 1.5rem;
+    }
+
+    .section-contenido{
+        width: 90%;
+    }
+
+    .section_docente{
+        width: 90%;
+        padding: 1rem 0;
+    }
+
+    .info_docente{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+    }
+
+    .docente{
+        margin-left: 0.5rem;
+    }
+    
+    .cursos_destacados{
+        width: 100%;
+        margin: auto;
+        padding: 0.3rem 0;
+    }
+    .cursitos{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+

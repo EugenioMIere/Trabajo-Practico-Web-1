@@ -1,0 +1,127 @@
+section{
+    width: 80%;
+    margin: auto;
+    padding: 2rem;
+}
+
+section h3{
+    padding: 1rem 0 2rem 0;
+}
+
+.div_inputs{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.div_inputs input{
+    width: 24rem;
+    padding: 0.7rem;
+    border-radius: 0.4rem;
+    border-color: rgb(218, 216, 216);
+    border-style: solid;
+}
+
+.btn_circulares{
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 2rem;
+    cursor: pointer;
+    color: rgb(119, 118, 118);
+    transition: 0.5s;
+}
+
+.btn_circulares:hover{
+    color: rgb(80, 80, 80);
+}
+
+.agregar_personas_texto{
+    margin: 1rem 0;
+}
+
+.agregar_persona_div{
+    display: flex;
+}
+
+.agregar_persona_div h4{
+   justify-content: baseline;
+   width: 10rem;
+   margin-left: 1rem;
+}
+
+.precio_inscribirse{
+    margin-top: 3rem;
+    display: flex;
+    padding: 1rem 0;
+}
+
+.precio_inscribirse h4{
+    padding: 0.3rem 1rem;
+    background-color: black;
+    color:white;
+}
+
+.precio_inscribirse button{
+    background-color: rgb(80, 80, 80);
+    padding: 0.2rem 1rem;
+    border-color: transparent;
+    border-radius: 0.4rem;
+    margin-left: 2rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.precio_inscribirse button:hover{
+    background-color: rgb(39, 39, 39);
+}
+
+.precio_inscribirse span{
+    color: white;
+}
+
+
+.cursos_destacados{
+    padding: 4rem 3rem;
+    background: rgb(193,193,193);
+background: linear-gradient(0deg, rgba(193,193,193,1) 0%, rgba(255,242,242,1) 40%);
+}
+
+
+.cursitos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 40px;
+}
+
+
+
+@media screen and (max-width:53em){
+    section{
+        width: 100%;
+        margin: auto;
+        padding: 0.5rem 1rem;
+    }
+
+    .form_inscripcion{
+        width: 70%;
+    }
+
+    .div_inputs{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn_circulares{
+        text-align: left;
+    }
+
+    .cursos_destacados{
+        width: 100%;
+        margin: auto;
+        padding: 0.3rem 0;
+    }
+    .cursitos{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}

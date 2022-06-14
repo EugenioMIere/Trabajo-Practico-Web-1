@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/menuResponsive.js"></script>
+    <link href='fullcalendar/core/main.css' rel='stylesheet' />
+    <link href='fullcalendar/daygrid/main.css' rel='stylesheet' />
+    <script src='fullcalendar/core/main.js'></script>
+    <script src='fullcalendar/daygrid/main.js'></script>
+    <script src="js/calendario.js"></script>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <script src="js/contador_carrito.js"></script>
+    <title>Calendario</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <a href="index.html"><img src="img/logo2.png" alt="logo"id="logo"></a>
+            <div class="barra_busqueda">
+                <form action="#" method="post" target="_self" id="listam">
+                    <datalist id="lista_info_header">
+                    <option value="Curso">
+                    <option value="Calendario Académico">
+                    <option value="Gift Card">
+                    <option value="Inscripcion a curso">
+                    <option value="Contacto">
+                    </datalist>
+                    <input type="text" list="lista_info_header" >
+                    
+                </form> 
+            </div>
+            <a><img src="img/carrito2.png" alt="carrito" id="carrito_header"></a>
+            <span id="cantidadCarrito">0</span>
+        </div>
+    </header>
+    <a class="desplegable">MENU</a>
+    <nav class="nav_paginas">
+        <ul>
+            <li>
+                <a href="curso.html">CURSOS</a> 
+            </li>
+            <li>
+                <a href="calendario.html">CALENDARIO ACADEMICO</a> 
+            </li>
+            <li> 
+                <a href="giftcard.html">GIFT CARD</a> 
+            </li>
+            <li>
+                <a href="contacto.html">CONTACTO</a> 
+            </li>
+
+        </ul>
+    </nav>
+
+    <main>
+        <section class="section_calendario">
+            <article id="calendario"></article>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="datos_grupo cajas_footer">
+            <h5>DATOS DEL GRUPO</h5>
+            <p class="integrantes">Eugenio</p>
+            <p class="integrantes">Ivan</p>
+            <p class="integrantes">Santiago</p>
+        </div>
+
+        <div class="menu_footer cajas_footer">
+            <nav class="nav_footer">
+                <ul>
+                    <li>
+                        <a href="curso.html">CURSOS</a> 
+                    </li>
+                    <li>
+                        <a href="#">CALENDARIO ACADEMICO</a> 
+                    </li>
+                    <li>
+                        <a href="giftcard.html">GIFT CARD</a> 
+                    </li>
+                    <li>
+                        <a href="contacto.html">CONTACTO</a> 
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="redes_footer cajas_footer">
+            <h5>REDES SOCIALES: </h5>
+            <div class="iconos_redes">
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer> 
+</body>
+</html>

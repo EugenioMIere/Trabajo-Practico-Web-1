@@ -1,0 +1,86 @@
+.form_datos{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 5rem 0;
+}
+
+.form_contacto{
+    width: 33%;
+    padding: 0 2rem;
+}
+
+.campos_form{
+    width: 100%;
+    margin: 1.2rem 0;
+    padding: 0.5rem 0;
+    border-radius: 4px 4px;
+    border-width: 0.01rem;
+    border-color: rgb(187, 186, 186);
+}
+
+#caracteresRestantes{
+    margin-bottom: 1rem;
+}
+
+.boton{
+    padding: 0.3rem;
+    background-color: rgb(155, 152, 152);
+    color: white;
+    width: 10rem;
+}
+
+#mensaje{
+    margin-top: 2em;
+}
+
+.error{
+    color: red;
+}
+
+.input_error{
+    border-color: rgb(252, 21, 21);
+}
+
+.datos{
+    padding: 1rem 3rem;
+    border:2px solid rgb(95, 93, 93);
+    height: 230px;
+    color: black;
+    text-align: justify;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.datos p{
+    margin: 1.5rem 0;
+}
+
+.mapa{
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.mapa h3{
+    padding: 1rem 0;
+}
+
+
+@media screen and (max-width:53em){
+    .form_datos{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .form_contacto{
+        width: 100%;
+        margin: auto;
+    }
+
+    .datos{
+        margin-top: 3rem;
+    }
+}
